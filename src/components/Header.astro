@@ -1,0 +1,34 @@
+---
+import { Image } from "astro:assets";
+import imgHeader from "../img/imagenHero.webp";
+---
+
+<style>
+    .header {
+        display: flex;
+        position: relative;
+        align-items: center;
+        justify-content: center;
+    }
+    .header-titulo {
+        position: absolute;
+    }
+    h1 {
+        font-size: 3rem;
+        font-weight: 700;
+        color: #fff;
+    }
+
+    .header-imagen {
+        z-index: -2;
+        width: 100%;
+        max-height: 10rem;
+    }
+</style>
+
+<header class="header">
+    <Image class="header-imagen" src={imgHeader} alt="Imagen Header" />
+    <div class="header-titulo">
+        <h1>Arre<span class="header-titulo-span">Parabrisas</span></h1>
+    </div>
+</header>
