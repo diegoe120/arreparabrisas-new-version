@@ -1,0 +1,30 @@
+---
+import Layout from "../layouts/Layout.astro";
+import { Image } from "astro:assets";
+import imgTrabajando from "../img/YoTrabajando.png";
+---
+
+<Layout title="ArreParabrisas - Nosotros">
+    <article>
+        <h2 class="text-center mt-1">Inicios</h2>
+        <p class="m-3 mt-5 text-justify">
+            La historia de como surgio la idea inicial. Corria el mes de octubre
+            de 1999, estaban de visita unos tios que viven en EEUU, y habiamos
+            asilido a cenar, vijando en un taxi mi tio me dice de golpe "ves el
+            parabrisas que esta roto? Sabias que se puede reparar?". Y desde
+            fines de 1999 comienza el proyecto de brindar el mejor servicio de
+            reparación de parabrisas a domicilio. Para ello nos pusimos en
+            contacto con una empresa de EEUU lider en el rubro dedicada desde
+            1984 a desarrollar productos para la reparación de Parabrisas.
+            Surgimos como respuesta a una neceisdad de brindar un servicio a
+            domicilio que le permitiera ahorrar tiempo a mis clientes.
+        </p>
+        <div class="text-center">
+            <Image
+                src={imgTrabajando}
+                alt="Diego reparando un parabrisas"
+                width={360}
+            />
+        </div>
+    </article>
+</Layout>
