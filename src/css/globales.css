@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
 :root {
     --accent: 136, 58, 234;
     --accent-light: 224, 204, 250;
@@ -8,8 +10,17 @@
             white 60%);
 }
 
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 html {
-    font-family: system-ui, sans-serif;
+    font-family: "Roboto", sans-serif;
     background: #7c818f;
     background-size: 224px;
 }
@@ -20,7 +31,7 @@ pago main {
     width: 800px;
     max-width: calc(100% - 2rem);
     color: white;
-    font-size: 20px;
+    font-size: 2rem;
     line-height: 1.6;
 }
 

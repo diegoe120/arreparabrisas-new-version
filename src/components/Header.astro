@@ -9,20 +9,31 @@ import imgHeader from "../img/imagenHero.webp";
         position: relative;
         align-items: center;
         justify-content: center;
+        color: #fff;
     }
     .header-titulo {
         position: absolute;
+        padding: 2rem;
+        text-align: center;
     }
     h1 {
-        font-size: 3rem;
-        font-weight: 700;
-        color: #fff;
+        font-size: 10vw;
+        font-weight: bold;
+        padding-bottom: 0;
     }
-
+    h2 {
+        padding-top: 0;
+        font-size: 4vw;
+    }
     .header-imagen {
         z-index: -2;
         width: 100%;
-        max-height: 10rem;
+        max-height: 50vw;
+    }
+    @media (min-width: 768px) {
+        .header-imagen {
+            max-height: 45vw;
+        }
     }
 </style>
 
@@ -30,5 +41,6 @@ import imgHeader from "../img/imagenHero.webp";
     <Image class="header-imagen" src={imgHeader} alt="Imagen Header" />
     <div class="header-titulo">
         <h1>Arre<span class="header-titulo-span">Parabrisas</span></h1>
+        <h2>Reparación de Parabrisas, pequeños golpes y rajaduras</h2>
     </div>
 </header>
