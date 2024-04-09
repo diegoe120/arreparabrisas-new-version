@@ -2,6 +2,7 @@
 import "../css/globales.css";
 import Header from "../components/Header.astro";
 import Navigation from "../components/Navigation.astro";
+import Footer from "../components/Footer.astro";
 interface Props {
 	title: string;
 }
@@ -28,6 +29,7 @@ const { title } = Astro.props;
 		<Header />
 		<Navigation />
 		<slot />
+		<Footer />
 		<!-- Scripts JS -->
 		<script
 			defer

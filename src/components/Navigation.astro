@@ -4,9 +4,16 @@ import "../css/globales.css";
 
 <style>
     a {
+        padding: 0.8rem;
         text-decoration: none;
-        color: #fff;
+        color: #f5d0d0;
         font-size: 2.6vw;
+        cursor: pointer;
+        transition: 0.3s;
+    }
+    a:hover {
+        color: #bd2727;
+        background-color: #797979;
     }
     span {
         text-transform: uppercase;
@@ -15,7 +22,6 @@ import "../css/globales.css";
         align-items: center;
         text-align: center;
         overflow: hidden;
-        padding: 1rem;
         background-color: #333;
         position: sticky;
         top: 0;
@@ -25,17 +31,20 @@ import "../css/globales.css";
     .menu-titulo {
         color: red;
         font-weight: bold;
-        font-size: 2vw;
+        font-size: 4vw;
+        padding-top: 1rem;
     }
     .menu-options {
         margin-top: 1rem;
         display: flex;
         flex-direction: column;
         gap: 1rem;
+        text-transform: uppercase;
     }
 
     @media (min-width: 468px) {
         .menu {
+            /* padding: 0.8rem; */
             display: flex;
             justify-content: space-between;
         }
@@ -47,7 +56,9 @@ import "../css/globales.css";
         }
 
         .menu-options a {
-            font-size: 2vw;
+            font-size: 1.8vw;
+        }
+        .menu-titulo {
         }
     }
 </style>

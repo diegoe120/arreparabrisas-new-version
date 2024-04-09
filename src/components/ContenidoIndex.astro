@@ -1,0 +1,36 @@
+---
+import { Image } from "astro:assets";
+import imgTrabajando from "../img/YoTrabajando.png";
+---
+
+<style>
+    .art-index {
+        margin: 1.5rem 1rem;
+    }
+    h2 {
+        text-align: center;
+    }
+    p {
+        margin: 1rem auto;
+    }
+</style>
+
+<article class="art-index">
+    <h2 class="">El arreglo del parabrisas</h2>
+    <p class="">
+        La reparación de parabrisas es un proceso que se utiliza para recuperar
+        la integridad estructural y óptica de un parabrisas que ha sido dañado
+        por un impacto, como una piedra. El proceso generalmente implica la
+        inyección de una resina especial en la grieta o astilla, seguida de la
+        exposición a la luz ultravioleta para curar la resina. Es muy importante
+        tener en cuenta que la recuperacion optica no es nunca del 100%, ya que
+        al utilizar resina no se tiene la misma refraccion de la luz
+    </p>
+    <div class="">
+        <Image
+            src={imgTrabajando}
+            alt="Diego reparando un parabrisas"
+            width={360}
+        />
+    </div>
+</article>
