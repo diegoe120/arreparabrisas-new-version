@@ -1,28 +1,8 @@
 ---
 import Layout from "../layouts/Layout.astro";
-import Menu from "../components/Menu.astro";
 ---
 
 <Layout title="Como Queda">
-    <Menu />
-    <!-- Inicio cabbecera de la pagina, titulo y logo -->
-    <section class="container-fluid">
-        <div class="row slider">
-            <div class="col align-self-center">
-                <h1 class="p-lg-1 p-sm-0 display-3 text-warning font-italic">
-                    Arreparabrisas
-                </h1>
-                <h2 class="display-5 text-warning">
-                    Reparacion de golpes y rajaduras a Domicilio
-                </h2>
-            </div>
-            <div class="col d-flex justify-content-center">
-                <img src="img/leon-heraldico.png" alt="Leon heraldico" />
-            </div>
-        </div>
-    </section>
-    <!-- Fin de la cabecera -->
-
     <!-- Zona central articulos y fotos -->
     <div class="bg-secondary text-white p-sm-2 p-2">
         <div class="box4">
@@ -73,64 +53,5 @@ import Menu from "../components/Menu.astro";
                 </p>
             </p>
         </div>
-        <!-- Inicio pie de pagina -->
-        <section class="p-3 bg-dark text-light">
-            <div class="row">
-                <div class="col">
-                    <h2>Información de contacto:</h2>
-                    <br />
-
-                    <p>
-                        Llamar para turno de lunes a viernes de
-                        <time>08:00</time> hs a
-                        <time>19:00</time> hs sabados
-                        <time>08:00</time>hs a
-                        <time>13:00</time>hs
-                    </p>
-                    <br />
-                    <p class="text-center">
-                        Cel.:
-                        <br />
-                        <a href="tel:+541150066160"> (11) 5006-6160</a>
-                        <a
-                            href="https://api.whatsapp.com/send?phone5491150066160"
-                        >
-                            <img
-                                src="img/whatsapp.svg"
-                                width="40"
-                                height="40"
-                                alt="Icono whatsapp"
-                            />
-                        </a>
-                        <br />
-                        <a href="tel:+541163057151"> (11) 6305-7151</a>
-                        <a
-                            href="https://api.whatsapp.com/send?phone5411963057151"
-                        >
-                            <img
-                                src="img/whatsapp.svg"
-                                width="40"
-                                height="40"
-                                alt="Icono whatsapp"
-                            />
-                        </a>
-                    </p>
-                    <p>
-                        Correo:
-                        <br />
-                        <a href="mailto:arreparabrisas@gmail.com"
-                            >arreparabrisas@gmail.com</a
-                        >
-                    </p>
-                    <br />
-                    <address>
-                        Ciudad Autónoma de Buenos Aires - Adolfo Alsina 1138
-                        (domicilio particular) - CP 1088
-                    </address>
-                </div>
-            </div>
-        </section>
-        <!-- Fin pie de pagina -->
-        <hr />
     </div>
 </Layout>
