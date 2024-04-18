@@ -1,5 +1,7 @@
 ---
 import Layout from "../layouts/Layout.astro";
+import { Image } from "astro:assets";
+import imgTrabajando from "../img/yoTrabajando.webp";
 ---
 
 <Layout title="Contacto">
@@ -9,8 +11,12 @@ import Layout from "../layouts/Layout.astro";
         </div>
         <div class="col-12">
             <p>Atendido unicamente por el dueño:</p>
-            <img src="img/imgYO.png" alt="Diego" width="200" height="200" /><br
-            />
+            <Image
+                src={imgTrabajando}
+                alt="reparando un parabrisas"
+                width="250"
+                height="200"
+            /><br />
             <p>Diego Esparrica</p><br />
         </div>
         <div class="col">
