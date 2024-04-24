@@ -4,57 +4,79 @@ import imgWhatsapp from "../img/whatsapp.svg";
 ---
 
 <style>
-    .bg-footer {
+    .footer {
         background-color: #333;
+        text-align: center;
+        color: azure;
+        padding: 1rem;
+    }
+    .footer-h2 {
+        margin-bottom: 1rem;
+    }
+    .footer-p__telefonos {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .footer-addres {
+        margin-top: 2rem;
+    }
+    .footer-dr {
+        font-size: small;
+        text-align: left;
+        padding: 2rem 0;
+    }
+    .footer-data {
+        margin: 2rem auto 1rem;
+    }
+    a {
+        text-decoration: none;
+        color: azure;
     }
 </style>
 
-<section class="bg-footer">
-    <div class="row">
-        <div class="col">
-            <h2>Información de contacto:</h2>
-            <br />
+<section class="footer">
+    <div class="">
+        <h2 class="footer-h2">Información de contacto:</h2>
 
-            <p>
-                Llamar para turno de lunes a viernes de <time>08:00</time> hs a
-                <time>19:00</time> hs sabados <time>08:00</time>hs a
-                <time>13:00</time>hs
-            </p>
-            <br />
-            <p class="text-center">
-                Cel.:
-                <br />
-                <a href="tel:+541150066160"> (11) 5006-6160</a>
-                <a href="https://api.whatsapp.com/send?phone5491150066160">
-                    <Image
-                        src={imgWhatsapp}
-                        width="40"
-                        height="40"
-                        alt="Icono whatsapp"
-                    />
-                </a>
-                <br />
-                <a href="tel:+541163057151"> (11) 6305-7151</a>
-                <a href="https://api.whatsapp.com/send?phone5411963057151">
-                    <Image
-                        src={imgWhatsapp}
-                        width="40"
-                        height="40"
-                        alt="Icono whatsapp"
-                    />
-                </a>
-            </p>
-            <p>
-                Correo: <br />
-                <a href="mailto:arreparabrisas@gmail.com"
-                    >arreparabrisas@gmail.com</a
-                >
-            </p>
-            <br />
-            <address>
-                Ciudad Autónoma de Buenos Aires - Adolfo Alsina 1138 (domicilio
-                particular) - CP 1088
-            </address>
-        </div>
+        <p class="footer-p__horarios">
+            Turnos: lunes a viernes de <time>08:00</time> hs a
+            <time>19:00</time> hs y sabados de<time>08:00</time>hs a
+            <time>13:00</time>hs
+        </p>
+        <h3 class="footer-data">Telefonos</h3>
+        <p class="footer-p__telefonos">
+            <a href="tel:+541150066160"> (11) 5006-6160</a>
+            <a href="https://wa.me/541150066160">
+                <Image
+                    src={imgWhatsapp}
+                    width="40"
+                    height="40"
+                    alt="Icono whatsapp"
+                />
+            </a>
+            /
+            <a href="tel:+541163057151"> (11) 6305-7151</a>
+            <a href="https://wa.me/541163057151">
+                <Image
+                    src={imgWhatsapp}
+                    width="40"
+                    height="40"
+                    alt="Icono whatsapp"
+                />
+            </a>
+        </p>
+        <h3 class="footer-data">Correo:</h3>
+        <p>
+            <a href="mailto:arreparabrisas@gmail.com"
+                >arreparabrisas@gmail.com</a
+            >
+        </p>
+        <address class="footer-addres">
+            Villaruel 1462 - Villa Crespo - Ciudad Autónoma de Buenos
+            Aires(domicilio particular)
+        </address>
+
+        <p class="footer-dr">© 2024 Arreparabrisas - All Rights Reserved.</p>
     </div>
 </section>
