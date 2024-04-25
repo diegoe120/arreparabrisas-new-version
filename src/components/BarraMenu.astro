@@ -1,0 +1,58 @@
+---
+import OptionsMenu from "./OptionsMenu.astro";
+import Hamburguer from "./Hamburguer.astro";
+---
+
+<style>
+    a {
+        text-decoration: none;
+        color: #fff;
+        font-size: 2.6vw;
+    }
+    span {
+        /* text-transform: uppercase; */
+    }
+    .menu {
+        align-items: center;
+        text-align: center;
+        overflow: hidden;
+        /** padding: 1rem; */
+        background-color: #333;
+        position: sticky;
+        top: 0;
+        z-index: 100;
+        padding: 1rem 0;
+    }
+
+    .menu-titulo {
+        color: red;
+        font-weight: bold;
+        font-size: 3vw;
+        letter-spacing: 0.05rem;
+    }
+
+    @media (min-width: 468px) {
+        .menu {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .menu-options {
+            flex-direction: row;
+            margin-top: 0;
+            align-items: center;
+            gap: 1.5rem;
+        }
+
+        .menu-options a {
+            font-size: 1.7vw;
+        }
+    }
+</style>
+<nav class="menu">
+    <div class="">
+        <a class="menu-titulo" href="/"><span>Arre</span>Parabrisas</a>
+    </div>
+    <Hamburguer />
+    <OptionsMenu />
+</nav>
