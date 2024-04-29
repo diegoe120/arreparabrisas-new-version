@@ -3,7 +3,8 @@ import ImageGallery from "react-image-gallery";
 function Slider() {
     const images = [
         {
-            original: "../img/carrusel/carrusel-2.jpg",
+            original: "../../public/carrusel/carrusel-1.jpg",
+
         },
     ];
     const Slider = (images) => {
