@@ -1,6 +1,7 @@
 ---
 import { Image } from "astro:assets";
 import imgTrabajando from "../img/yoTrabajando.webp";
+import Slider from "./Slider.astro";
 ---
 
 <style>
@@ -26,7 +27,7 @@ import imgTrabajando from "../img/yoTrabajando.webp";
         tener en cuenta que la recuperacion optica no es nunca del 100%, ya que
         al utilizar resina no se tiene la misma refraccion de la luz
     </p>
-
+    <Slider client:load />
     <div class="">
         <Image
             src={imgTrabajando}
