@@ -1,28 +1,23 @@
-import { Swiper, SwiperSlide } from 'swiper/react';
-import { Navigation } from 'swiper/modules';
-import 'swiper/css';
-import 'swiper/css/pagination';
-import 'swiper/css/navigation';
-import '../css/globales.css';
+import ImageGallery from "react-image-gallery";
+import "react-image-gallery/styles/css/image-gallery.css";
 
-
-export default function Gallery() {
-
+export default function Galeria() {
+    const images = [
+        {
+            original: "src/img/carrusel/carrusel-1.jpg",
+        },
+        {
+            original: "src/img/carrusel/carrusel-2.jpg",
+        },
+        {
+            original: "src/img/carrusel/carrusel-3.jpg",
+        },
+    ];
 
     return (
-        <>
-            <Swiper navigation={true} modules={[Navigation]} className="mySwiper">
-                <SwiperSlide>Slide 1</SwiperSlide>
-                <SwiperSlide>Slide 2</SwiperSlide>
-                <SwiperSlide>Slide 3</SwiperSlide>
-                <SwiperSlide>Slide 4</SwiperSlide>
-                <SwiperSlide>Slide 5</SwiperSlide>
-                <SwiperSlide>Slide 6</SwiperSlide>
-                <SwiperSlide>Slide 7</SwiperSlide>
-                <SwiperSlide>Slide 8</SwiperSlide>
-                <SwiperSlide>Slide 9</SwiperSlide>
-            </Swiper>
-        </>
+        <div>
+            <ImageGallery items={images} />
+        </div>
     )
+};
 
-}
