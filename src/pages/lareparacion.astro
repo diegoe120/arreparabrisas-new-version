@@ -6,25 +6,50 @@ import imgInyector from "../img/procreparacion/inyector.webp";
 import imgLampara from "../img/procreparacion/lamparaUV.webp";
 import imgTaladro from "../img/procreparacion/taladro.webp";
 import imgLaminado from "../img/laminados.png";
+import imgDestruido1 from "../img/noReparables/rotCircular.jpg";
+import imgDestruido2 from "../img/noReparables/rotEstrella.jpg";
+import imgDestruido3 from "../img/noReparables/rotLongitudinal.jpg";
 ---
 
 <Layout title="La Reparacion">
     <!-- Zona central articulos y fotos -->
     <section class="">
         <article class="my-4 mx-3">
-            <h2 class="my-3 text-xl text-center">
+            <h2 class="my-3 text-xl text-center font-bold">
                 Una pregunta habitual es: ¿Se Pueden Reparar el Parabrisas?
             </h2>
             <p>-Si, se pueden reparar los parabrisas.</p>
-            <h2 class="my-3 text-xl text-center">
+            <h2 class="my-3 text-xl text-center font-bold">
                 ¿Se Pueden reparar Todos los parabrisas?
             </h2>
             <p class="mb-2">
                 -No, en muchos casos no se pueden reparar, por ejemplo cuando
                 estan dañadas las dos laminas del parabrisas, cuando las
-                rajaduras son muy extensas y por otros motivos.
+                rajaduras son muy extensas y por otros motivos. Estos son unos
+                ejemplos
             </p>
-            <h1 class="text-red-600">IMPORTANTE AGREGAR IMAGENES</h1>
+            <div
+                class="my-3 grid grid-flow-col md:grid-flow-row grid-cols-3 hover:grid-flow-row gap-1 justify-items-center hover:touch-pinch-zoom"
+            >
+                <Image
+                    src={imgDestruido1}
+                    alt="Parabrisas Irreparable"
+                    width={280}
+                    height={150}
+                />
+                <Image
+                    src={imgDestruido2}
+                    alt="Parabrisas Irreparable"
+                    width={280}
+                    height={150}
+                />
+                <Image
+                    src={imgDestruido3}
+                    alt="Parabrisas Irreparable"
+                    width={280}
+                    height={150}
+                />
+            </div>
             <p class="mb-2">
                 La reparación de parabrisas toma unos pocos minutos de su
                 tiempo, aproximadamente una hora, y una vez terminada usted
@@ -38,12 +63,15 @@ import imgLaminado from "../img/laminados.png";
                 puede dar una garantía del 100% de que no tendrá filtraciones y
                 ruidos molestos.
             </p>
-            <Image
-                src={imgLaminado}
-                alt="Esquema vidrio laminado"
-                width={380}
-                height={270}
-            />
+            <div class="flex justify-center">
+                <Image
+                    src={imgLaminado}
+                    alt="Esquema vidrio laminado"
+                    width={380}
+                    height={270}
+                />
+            </div>
+
             <h2 class="my-3 text-xl text-center">
                 Porque son reparables los parabrisas
             </h2>
