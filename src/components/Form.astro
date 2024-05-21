@@ -1,0 +1,73 @@
+---
+
+---
+
+<form
+    class="bg-slate-600 p-2 my-4 text-neutral-200"
+    action=""
+    method="get"
+    autocomplete="on"
+>
+    <fieldset class="text-neutral-800">
+        <legend class="text-2xl justify-center mb-2"
+            >Consulta por Presupuesto</legend
+        >
+        <div class="p-2">
+            <label class="mr-2" for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" autocomplete="name" />
+            <label class="mr-2" for="apellido">Apellido:</label>
+            <input
+                type="text"
+                id="apellido"
+                name="apellido"
+                autocomplete="family-name"
+            />
+        </div>
+        <div class="p-2">
+            <label class="mr-2" for="correo">E-mail:</label>
+            <input
+                type="email"
+                id="correo"
+                name="correo"
+                pattern=".+@example\.com"
+                size="30"
+                required
+                placeholder="name@example.com"
+                autocomplete="email"
+            />
+        </div>
+        <div class="p-2">
+            <label for="reparacion">Tipo de reparación:</label>
+            <select class="text-neutral-800" name="reparacion" id="reparacion">
+                <option value="golpes">Pequeños golpes</option>
+                <option value="rajadura">Rajadura/s</option>
+                <option value="mixta">Combinacion de golpes y rajaduras</option>
+            </select>
+        </div>
+        <div class="p-2">
+            <label for="archivoImagen">Agregar fotos del parabrisas:</label>
+            <input
+                type="file"
+                id="archivoImagen"
+                name="archivoImagen"
+                accept="image/*"
+                required
+            />
+        </div>
+        <div class="p-2">
+            <textarea
+                class="text-neutral-400"
+                name="mensaje"
+                rows="10"
+                cols="50"
+                id=""
+                >Descripción y tiempo desde que se daño el parabrisas
+            </textarea>
+        </div>
+        <button
+            class="bg-slate-400 text-neutral-800 m-4 py-2 px-8 uppercase font-bold border-none hover:bg-slate-700 hover:text-neutral-300"
+            type="submit"
+            value="submit">Enviar</button
+        >
+    </fieldset>
+</form>
