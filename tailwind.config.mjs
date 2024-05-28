@@ -5,6 +5,11 @@ export default {
 		extend: {
 			fontFamily: {
 				'Roboto': ['Roboto', '"sant serif"'],
+			},
+			colors: {
+				'primario': '#bd6457',
+				'bg-color': '#242c31',
+				'claro': '#cedbd7'
 			}
 		},
 	},

@@ -4,47 +4,35 @@ import imgWhatsapp from "../img/whatsapp.svg";
 ---
 
 <style>
-    .footer {
-        background-color: #333;
-        text-align: center;
-        color: azure;
-        padding: 1rem;
-    }
-    .footer-h2 {
-        margin-bottom: 1rem;
-    }
     .footer-p__telefonos {
         display: flex;
         align-items: center;
         justify-content: center;
-    }
-    .footer-addres {
-        margin-top: 3rem;
     }
     .footer-dr {
         font-size: small;
         text-align: left;
         padding: 2rem 0;
     }
-    .footer-data {
-        margin: 2rem auto 1rem;
-    }
+
     a {
         text-decoration: none;
         color: azure;
     }
 </style>
 
-<section class="footer">
+<section class="text-claro bg-bg-color text-center p-4">
     <div class="">
-        <h2 class="footer-h2">Información de contacto:</h2>
+        <h2 class="mb-4 text-xl">Información de contacto:</h2>
 
-        <p class="footer-p__horarios">
-            Turnos: lunes a viernes de <time>08:00</time> hs a
+        <p class="footer-p__horarios mb-3">
+            <span class="text-primario">Turnos</span> : lunes a viernes de <time
+                >08:00</time
+            > hs a
             <time>19:00</time> hs y sabados de<time>08:00</time>hs a
             <time>13:00</time>hs
         </p>
-        <h3 class="footer-data">Telefonos</h3>
+        <h3 class="text-lg">Telefonos</h3>
         <p class="footer-p__telefonos">
             <a href="tel:+541150066160"> (11) 5006-6160</a>
             <a href="https://wa.me/541150066160">
@@ -66,17 +54,17 @@ import imgWhatsapp from "../img/whatsapp.svg";
                 />
             </a>
         </p>
-        <h3 class="footer-data">Correo:</h3>
-        <p>
+        <h3 class="text-lg">Correo:</h3>
+        <p class="mb-3">
             <a href="mailto:arreparabrisas@gmail.com"
                 >arreparabrisas@gmail.com</a
             >
         </p>
-        <address class="footer-addres">
+        <address class="mb-4">
             Villaruel 1462 - Villa Crespo - Ciudad Autónoma de Buenos
             Aires(domicilio particular)
         </address>
 
-        <p class="footer-dr">© 2024 Arreparabrisas - All Rights Reserved.</p>
+        <p class="text-sm">© 2024 Arreparabrisas - All Rights Reserved.</p>
     </div>
 </section>

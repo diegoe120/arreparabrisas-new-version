@@ -3,11 +3,13 @@ import { Image } from "astro:assets";
 import imgHeader from "../img/imagenHero.webp";
 ---
 
-<header class="header">
+<header class="header text-claro">
     <Image class="header-imagen" src={imgHeader} alt="Imagen Header" />
     <div class="header-titulo">
         <h1><span class="header-titulo-span">Arre</span>Parabrisas</h1>
-        <h2>Reparación de Parabrisas, pequeños golpes y rajaduras</h2>
+        <h2 class="drop-shadow-md">
+            Reparación de Parabrisas, pequeños golpes y rajaduras
+        </h2>
     </div>
 </header>
 
@@ -17,7 +19,6 @@ import imgHeader from "../img/imagenHero.webp";
         position: relative;
         align-items: center;
         justify-content: center;
-        color: #fff;
     }
     .header-titulo {
         position: absolute;

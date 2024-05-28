@@ -1,12 +1,13 @@
 ---
 import Layout from "../layouts/Layout.astro";
+import FormLayout from "../components/Form.astro";
 import Form from "../components/Form.astro";
 ---
 
 <Layout title="Contacto">
     <div class="bg-secondary text-neutral-800 p-sm-2 p-4 my-2">
         <div class="col-12">
-            <h2 class="text-2xl text-center mt-1">Como Contactarnos</h2>
+            <h2 class="text-2xl text-center my-1">Como Contactarnos</h2>
         </div>
         <div class="col-12">
             <h2>La reparación se realiza con turno.</h2>
@@ -19,8 +20,8 @@ import Form from "../components/Form.astro";
                 para recibir una opinión sobre si es reparable y un presupuesto.
             </p>
         </div>
-        <Form />
-        <div class="col">
+
+        <div class="flex justify-center mt-6">
             <div class="md:mx-auto">
                 <iframe
                     src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3284.5042221218996!2d-58.44910818796115!3d-34.59140925673664!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bccad09a9981bf%3A0xb87ceab3bf42cfe1!2sArreparabrisas!5e0!3m2!1ses!2sar!4v1712956992670!5m2!1ses!2sar"

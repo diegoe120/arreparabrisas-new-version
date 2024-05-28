@@ -5,7 +5,7 @@
 <form
     class="bg-slate-600 p-2 my-4 text-neutral-200"
     action=""
-    method="get"
+    method="post"
     autocomplete="on"
 >
     <fieldset class="text-neutral-800">
@@ -14,13 +14,23 @@
         >
         <div class="p-2">
             <label class="mr-2" for="nombre">Nombre:</label>
-            <input type="text" id="nombre" name="nombre" autocomplete="name" />
+            <input
+                type="text"
+                id="nombre"
+                name="nombre"
+                autocomplete="name"
+                minlength="4"
+                maxlength="15"
+                required
+            />
             <label class="mr-2" for="apellido">Apellido:</label>
             <input
                 type="text"
                 id="apellido"
                 name="apellido"
                 autocomplete="family-name"
+                minlength="4"
+                maxlength="15"
             />
         </div>
         <div class="p-2">
@@ -29,20 +39,9 @@
                 type="email"
                 id="correo"
                 name="correo"
-                pattern=".+@example\.com"
-                size="30"
-                required
-                placeholder="name@example.com"
                 autocomplete="email"
+                required
             />
-        </div>
-        <div class="p-2">
-            <label for="reparacion">Tipo de reparación:</label>
-            <select class="text-neutral-800" name="reparacion" id="reparacion">
-                <option value="golpes">Pequeños golpes</option>
-                <option value="rajadura">Rajadura/s</option>
-                <option value="mixta">Combinacion de golpes y rajaduras</option>
-            </select>
         </div>
         <div class="p-2">
             <label for="archivoImagen">Agregar fotos del parabrisas:</label>
@@ -58,7 +57,7 @@
             <textarea
                 class="text-neutral-400"
                 name="mensaje"
-                rows="10"
+                rows="5"
                 cols="50"
                 id=""
                 >Descripción y tiempo desde que se daño el parabrisas
@@ -71,3 +70,5 @@
         >
     </fieldset>
 </form>
+
+<script src="../scripts/validacion.js"></script>

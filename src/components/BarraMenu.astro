@@ -1,12 +1,10 @@
 ---
+import "../css/menu.css";
 import OptionsMenu from "./OptionsMenu.astro";
 import Hamburguer from "./Hamburguer.astro";
 ---
 
-<nav class="menu">
-    <div class="pl-4">
-        <a class="menu-titulo" href="/"><span>Arre</span>Parabrisas</a>
-    </div>
+<nav class="menu flex justify-between">
     <div>
         <Hamburguer />
         <OptionsMenu />
