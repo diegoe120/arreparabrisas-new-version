@@ -3,27 +3,24 @@ import { Image } from "astro:assets";
 import imgHeader from "../img/imagenHero.webp";
 ---
 
-<header class="header text-claro">
-    <Image class="header-imagen" src={imgHeader} alt="Imagen Header" />
-    <div class="header-titulo">
-        <h1><span class="header-titulo-span">Arre</span>Parabrisas</h1>
-        <h2 class="drop-shadow-md">
-            Reparación de Parabrisas, pequeños golpes y rajaduras
+<header class="flex relative text-left text-claro">
+    <Image
+        class="-z-10 object-cover w-full h-80"
+        src={imgHeader}
+        alt="Imagen Header"
+    />
+    <div class="header-titulo absolute p-6 font-noto font-bold">
+        <h1 class="">
+            <span class="italic">Arre</span>Parabrisas
+        </h1>
+        <h2 class="italic text-sm leading-10">
+            Reparación de Parabrisas,<br /> pequeños golpes y rajaduras
         </h2>
     </div>
 </header>
 
 <style>
-    .header {
-        display: flex;
-        position: relative;
-        align-items: center;
-        justify-content: center;
-    }
     .header-titulo {
-        position: absolute;
-        padding: 2rem;
-        text-align: center;
     }
     .header-titulo-span {
         font-style: italic;
@@ -37,11 +34,7 @@ import imgHeader from "../img/imagenHero.webp";
         padding-top: 0;
         font-size: 4vw;
     }
-    .header-imagen {
-        z-index: -2;
-        width: 100%;
-        height: 50vw;
-    }
+
     @media (min-width: 468px) {
         .header-imagen {
             max-height: 40vw;

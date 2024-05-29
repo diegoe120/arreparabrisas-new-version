@@ -4,12 +4,13 @@ export default {
 	theme: {
 		extend: {
 			fontFamily: {
-				'Roboto': ['Roboto', '"sant serif"'],
+
+				'noto': ["Noto Sans", 'sans-serif']
 			},
 			colors: {
 				'primario': '#bd6457',
 				'bg-color': '#242c31',
-				'claro': '#cedbd7'
+				'claro': '#F2E963'
 			}
 		},
 	},

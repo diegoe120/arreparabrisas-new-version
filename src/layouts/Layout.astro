@@ -3,6 +3,7 @@ import "../css/globales.css";
 import Header from "../components/Header.astro";
 import BarraMenu from "../components/BarraMenu.astro";
 import Footer from "../components/Footer.astro";
+import ViewTransitions from "astro/components/ViewTransitions.astro";
 interface Props {
 	title: string;
 }
@@ -30,6 +31,7 @@ const { title } = Astro.props;
 			content="NxhIYyeJvPZdvlkIDS6AX0G1ilLdfiGp8YO6rMMurGE"
 		/>
 		<meta name="author" content="Diego Esparrica" />
+		<ViewTransitions />
 	</head>
 	<body>
 		<Header />
