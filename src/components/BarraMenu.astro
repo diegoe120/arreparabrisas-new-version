@@ -4,40 +4,21 @@ import OptionsMenu from "./OptionsMenu.astro";
 import Hamburguer from "./Hamburguer.astro";
 ---
 
-<nav class="menu flex justify-between">
-    <div>
-        <Hamburguer />
-        <OptionsMenu />
-    </div>
-</nav>
+<div
+    class="menu sticky top-0 bg-bg-color flex justify-between z-20"
+    transition:animate="none"
+>
+    <Hamburguer />
+    <OptionsMenu />
+</div>
 
 <style>
-    a {
-        text-decoration: none;
-        color: #fff;
-        font-size: 2.6vw;
-    }
-    span {
-        /* text-transform: uppercase; */
-    }
-    .menu {
+    /* .menu {
         align-items: center;
         text-align: center;
         overflow: hidden;
-        /** padding: 1rem; */
-        background-color: #333;
-        position: sticky;
-        top: 0;
         z-index: 100;
-        /* padding: 1rem 0; */
-    }
-
-    .menu-titulo {
-        color: red;
-        font-weight: bold;
-        font-size: 3vw;
-        letter-spacing: 0.05rem;
-    }
+    } */
 
     @media (min-width: 468px) {
         .menu {

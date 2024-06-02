@@ -1,11 +1,10 @@
 ---
-import { Image } from "astro:assets";
-import imgTrabajando from "../img/yoTrabajando.webp";
+import Galeria from "./Galeria.astro";
 ---
 
 <article class="my-6 mx-4">
-    <h2 class="text-2xl">El arreglo del parabrisas</h2>
-    <p class="my-4 mx-auto">
+    <h2 class="text-2xl text-center font-bold">El arreglo del parabrisas</h2>
+    <p class="my-4 mx-auto indent-4">
         La reparación de parabrisas es un proceso que se utiliza para recuperar
         la integridad estructural y óptica de un parabrisas que ha sido dañado
         por un impacto, como una piedra. El proceso implica la inyección de una
@@ -17,19 +16,5 @@ import imgTrabajando from "../img/yoTrabajando.webp";
         desaparecen, se disimulan y depende de cada golpe, cada reparación es
         única.
     </p>
-
-    <div class="">
-        <Image
-            src={imgTrabajando}
-            alt="Diego reparando un parabrisas"
-            width={360}
-        />
-    </div>
-    <h1>
-        aqui
-        <a
-            href="https://www.google.com/search?sca_esv=792c36b2414f597c&sca_upv=1&authuser=0&hl=es&gl=ar&output=search&q=Arreparabrisas&ludocid=13293758257819733985&lsig=AB86z5WBq4VfqDSVmEPp5xlZIKSX&ved=1i%3A3%2Ct%3A109124%2Ce%3A2%2Cp%3AYvFVZt6wMY-e5OUPm5q3oA8%3A34#lrd=0x95bccad09a9981bf:0xb87ceab3bf42cfe1,1,,,,"
-            >Enlace a google maps</a
-        >
-    </h1>
+    <!-- <Galeria /> -->
 </article>

@@ -14,7 +14,7 @@
         height: 5px;
         margin: 6px 0;
         transition: 0.4s;
-        background-color: #bd6457;
+        background-color: #326173;
     }
 }
 
@@ -34,7 +34,7 @@
     width: 100%;
     top: 5rem;
     left: 48px;
-    background-color: #ff9776;
+    background-color: #326173;
     display: none;
     margin: 0;
 }
@@ -47,11 +47,12 @@
     font-size: 1.2rem;
     font-weight: bold;
     text-transform: uppercase;
+    color: #F2E963;
 }
 
 .nav-links a:hover,
 a:focus {
-    background-color: #c0b7b4;
+    background-color: #242c31;
 }
 
 .expanded {
@@ -68,9 +69,15 @@ a:focus {
         background: none;
     }
 
+
     .nav-links a {
         display: inline-block;
         padding: 15px 20px;
+    }
+
+    .nav-links a:hover,
+    a:focus {
+        background: #326173;
     }
 
     .hamburger {

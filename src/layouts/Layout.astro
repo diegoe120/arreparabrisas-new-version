@@ -9,6 +9,8 @@ interface Props {
 }
 
 const { title } = Astro.props;
+const nameGoogle = "google-site-verification";
+const codeG = "NxhIYyeJvPZdvlkIDS6AX0G1ilLdfiGp8YO6rMMurGE";
 ---
 
 <!doctype html>
@@ -26,17 +28,15 @@ const { title } = Astro.props;
 			href="https://fonts.googleapis.com/css2?family=Arizonia&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,400;0,700;1,400;1,700&display=swap"
 			rel="stylesheet"
 		/>
-		<meta
-			name="google-site-verification"
-			content="NxhIYyeJvPZdvlkIDS6AX0G1ilLdfiGp8YO6rMMurGE"
-		/>
+		<meta name={nameGoogle} content={codeG} />
 		<meta name="author" content="Diego Esparrica" />
 		<ViewTransitions />
 	</head>
 	<body>
 		<Header />
 		<BarraMenu />
-		<section class="max-w-4xl mx-auto">
+
+		<section class="max-w-4xl mx-auto" transition:animate="slide">
 			<slot />
 		</section>
 		<Footer />
